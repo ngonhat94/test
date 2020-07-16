@@ -41,15 +41,10 @@ export default class App extends Component{
     }
 
     updateState = (profiles) => {
-        // console.log('====()=============================>profiles');
-        // console.log(profiles);
-        // this.setState({profiles: profiles.profiles})
         this.getUserData()
     }
 
     render() {
-        // console.log('====()=============================>');
-        // console.log(this.state.profiles);
         const {profiles, isLoading} = this.state;
         return (
             <View style={styles.container}>
